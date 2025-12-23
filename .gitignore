@@ -11,6 +11,8 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+*.zip
+.wrangler/
 
 # Node (in case of future tooling)
 node_modules/

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elderly Friendly Bookmarks for Youtube - One-Click Magic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="glass">
+        <div class="container">
+            <div class="logo">
+                <img src="icons/icon48.png" alt="Star Logo">
+                <span>Elderly Friendly Bookmarks</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="https://github.com/devforagirl/YTEasyBookmark" class="btn-primary">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="gradient-text">Make YouTube Simple for Everyone.</h1>
+                <p class="subtitle">A one-click bookmarking tool designed with care for the elderly. Large icons, high
+                    contrast, and magic simplicity.</p>
+                <div class="hero-cta">
+                    <a href="https://github.com/devforagirl/YTEasyBookmark" class="btn-main">Install Extension</a>
+                    <a href="https://github.com/devforagirl/YTEasyBookmark" class="btn-secondary">View Source
+                        (GitHub)</a>
+                    <span class="version">v1.0 • Free & Open Source</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-star">
+                    <img src="icons/icon128.png" alt="3D Star Icon">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Designed for Accessibility</h2>
+            <div class="feature-grid">
+                <div class="feature-card glass">
+                    <div class="icon">⭐</div>
+                    <h3>One-Click Magic</h3>
+                    <p>A prominent gold button right where you need it. No more digging through menus.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">⏰</div>
+                    <h3>Save Your Time</h3>
+                    <p>Remembers exactly where you stopped. Resumes videos at the perfect moment.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">👁️</div>
+                    <h3>High Visibility</h3>
+                    <p>Large fonts and high-contrast colors designed for clear vision and zero confusion.</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="icon">🌍</div>
+                    <h3>Multi-Language</h3>
+                    <p>Supports English and Chinese automatically. Speaks your language by default.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elderly Friendly Bookmarks for Youtube. Built for a better web.</p>
+            <div class="footer-bottom">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>•</span>
+                <a href="https://github.com/devforagirl/YTEasyBookmark">Contribution</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Subtle micro-animations on scroll
+        const cards = document.querySelectorAll('.feature-card');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>
