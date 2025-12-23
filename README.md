@@ -28,8 +28,8 @@ A simple, high-contrast, and intuitive Chrome extension designed specifically fo
 1. **In the Popup**: Click the extension icon to open the settings and choose your preferred language.
 2. **On YouTube**:
    - Open any video or channel page.
-   - Click the **Bookmark** (or **收藏**) button next to the YouTube channel name/subscribe button.
-   - The button will turn grey and show **Bookmarked** (or **已收藏**) to confirm.
+   - Click the **Bookmark** button next to the YouTube channel name/subscribe button.
+   - The button will turn grey and show **Bookmarked** to confirm.
    - To remove, just click the button again.
 
 ## 🔧 Technical Highlights
