@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 250px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background-color: #ffffff;
+            color: #0f0f0f;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .header img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .setting-item {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #606060;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #065fd4;
+        }
+
+        .footer {
+            font-size: 11px;
+            color: #909090;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="icons/icon48.png" alt="logo">
+        <h2 id="title-settings">Settings</h2>
+    </div>
+
+    <div class="setting-item">
+        <label id="label-lang" for="lang-select">Language / 语言</label>
+        <select id="lang-select">
+            <option value="auto">Auto (Browser)</option>
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+        </select>
+    </div>
+
+    <div class="footer">
+        Elderly Friendly Bookmarks for Youtube v1.0
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

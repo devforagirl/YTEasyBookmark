@@ -1,0 +1,54 @@
+/* Base styles for the Bookmark button to match YouTube's Subscribe button */
+.yteb-bookmark-btn {
+    background-color: var(--yt-spec-static-brand-red, #f00);
+    /* Fallback to red if YT vars fail */
+    color: white;
+    border-radius: 18px;
+    padding: 0 16px;
+    margin-left: 8px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s cubic-bezier(0.05, 0, 0, 1);
+}
+
+/* Modern YT style (High contrast pill) */
+.yteb-bookmark-btn.yt-modern {
+    background-color: var(--yt-spec-call-to-action, #065fd4);
+    color: var(--yt-spec-text-primary-inverse, #fff);
+}
+
+.yteb-bookmark-btn.yt-modern:hover {
+    background-color: var(--yt-spec-call-to-action-inverse, #054eb7);
+}
+
+.yteb-bookmark-btn.bookmarked {
+    background-color: var(--yt-spec-badge-chip-background, rgba(0, 0, 0, 0.05));
+    color: var(--yt-spec-text-primary, #0f0f0f);
+}
+
+.yteb-bookmark-btn.bookmarked:hover {
+    background-color: var(--yt-spec-badge-chip-background-hover, rgba(0, 0, 0, 0.1));
+}
+
+/* Handle Dark Mode if YT specimen variables are not available */
+@media (prefers-color-scheme: dark) {
+    .yteb-bookmark-btn.bookmarked {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #f1f1f1;
+    }
+}
+
+/* Support for Channel Page (flexible actions) */
+.ytFlexibleActionsViewModelAction {
+    display: inline-flex;
+    align-items: center;
+}
